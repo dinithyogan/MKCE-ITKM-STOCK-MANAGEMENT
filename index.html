@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color:whitesmoke;
+        }
+        #col-1 {
+        position: relative;
+        width: 50%;
+        float: left;
+        height: 100%;
+        }
+
+        #col-2 {
+        position: relative;
+        width: 50%;
+        float: left;
+        height: 100%;
+        }
+        .button {
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  height: 1.5cm;
+  width: 7.5cm;
+  margin-left: 25%;
+  border-radius: 20px; 
+  background-color: rgb(146, 62, 225); 
+  font-size: 26px; 
+  font-style:oblique;
+  
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+    </style>
+</head>
+<body>
+    <div style="height: 70px;">
+        <img src="pictures/MKCE_LOGO_NEW-removebg-preview.png" height="70px" style="padding-top: 2px; border-radius: 5%;margin-left: 5%;">
+        <span style="font-size: 3.9em;align-items: center; float:right; padding-right:39%;">MKCE ITKM</span>
+    </div>
+    <div style="margin-top: 1%; border: none; box-shadow: 10px; height: 540px; margin-left: 2%; margin-right: 2%; background-color:white; border-radius: 50px; ">
+        <div id="col-1">
+            <img src="pictures/home.avif" style=" width: 90%;height: 90%;margin: 25px;">
+        </div>
+        <div id="col-2">
+            <div style="margin-top: 35%;">
+                <button class="button" onclick="location.href = 'login/admin/adminlogin.html'" >
+                    <span>Admin</span>
+                </button>
+            </div>
+            <br>
+            <div>
+                <button class="button" onclick="location.href = 'login/user/adminlogin.html'" >
+                    <span>Lab Assistant</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
